@@ -1,0 +1,21 @@
+# GPT Math Expression API
+
+這是一個簡單但實用的 API，能夠安全地執行四則運算，設計目的是搭配 ChatGPT 的「自訂 GPT」與「動作（Actions）」功能使用，協助模型穩定處理數學式計算需求。
+
+---
+
+## 功能特色
+
+- 支援：加法、減法、乘法、除法、括號、負數、次方運算
+- 安全：使用 Python `ast` 模組解析運算式，避免程式碼注入
+- 通用：可作為 ChatGPT 的外部計算動作（Action）呼叫
+- 雲端部署友善：可快速部署至 [Render](https://render.com)、Railway、Vercel 等平台
+
+---
+
+## 快速使用
+
+### 安裝套件
+
+```bash
+pip install flask
